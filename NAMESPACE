@@ -1,0 +1,7 @@
+export("hset", "is.hset", "as.hset", "is.generalized", "as.generalized", "as.not.generalized", "clone.of.hset", "refer.to.hset", "members", "multiplicities", "size.support", "cardinality", "inclusion.member", "hset1.included.to.hset2", "hsets.are.equal", "intersection", "union", "difference", "symmdiff", "setsum")
+import("hash")
+importFrom("methods", "is", "new")
+
+
+
+

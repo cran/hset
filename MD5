@@ -1,0 +1,10 @@
+76b507c36a5c26442a07baf285ddbdd1 *DESCRIPTION
+ff5fdbecf9a32bc188f0a85d30dcdc4d *LICENSE
+edec2d9f49e258a4e3a0534fa1ec7fbd *NAMESPACE
+ce82ac96e15cac527f1706b2b3eef14f *R/generic.R
+8cfa634c61f48551baf9c991feb87332 *R/hset.R
+59aad1fcba85e3b9176137cf4daa3f77 *R/operations.R
+733b6597e4cf00d53c7201e8e3f5e8b5 *man/hset.Rd
+6f1b76268797e526357db7a242c7226f *man/inclusion.Rd
+64cf4f7b3eb0151ca69482494cb2b2b0 *man/operations.Rd
+07021ab3ee5dbdeaefd207ccda10a10d *man/subset.Rd
