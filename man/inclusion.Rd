@@ -1,13 +1,13 @@
 \name{in}
 
 \alias{inclusion.member}
-%\alias{`\%in\%`}
+\alias{\%in\%}
 
 \title{Parametrized inclusion predicate between a member and an \code{"hset"} object}
 \description{\code{TRUE} is returned when the argument \code{member} is included in the set (or multiset) \code{hset}, otherwise \code{FALSE} is returned.}
 \usage{
 inclusion.member(member, hset, multiplicity = 1L, type.relation = `<=`)
-# member \%in\% hset # type.relation is <=
+member \%in\% hset # default for multiplicity and type.relation
 }
 \arguments{
   \item{member}{vector of length \code{1} that, when converted to a \code{"character"}, labels the element that can be included in the set.}
@@ -24,7 +24,8 @@ Arguments \code{multiplicity} and \code{type.relation} used only when argument \
 }
 
 \examples{
-inclusion.member(2, hset(c(2,3))) # 2 \%in\% hset(c(2,3))
+inclusion.member(2, hset(c(2,3))) 
+2 \%in\% hset(c(2,3))
 inclusion.member(1, hset(c(2,3))) # 1 \%in\% hset(c(2,3))
 
 inclusion.member(2, hset(c(2,3), generalized = TRUE))

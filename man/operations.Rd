@@ -6,62 +6,63 @@
 \alias{symmdiff}
 \alias{setsum}
 
-%\alias{`\%&~\%`}
-%\alias{`\%&&~\%`}
-%\alias{`\%and~\%`}
-%\alias{`\%&\%`}
-%\alias{`\%&&\%`}
-%\alias{`\%and\%`}
+\alias{\%&~\%}
+\alias{\%&&~\%}
+\alias{\%and~\%}
+\alias{\%&\%}
+\alias{\%&&\%}
+\alias{\%and\%}
 
-%\alias{`\%|~\%`}
-%\alias{`\%||~\%`}
-%\alias{`\%or~\%`}
-%\alias{`\%|\%`}
-%\alias{`\%||\%`}
-%\alias{`\%or\%`}
+\alias{\%|~\%}
+\alias{\%||~\%}
+\alias{\%or~\%}
+\alias{\%|\%}
+\alias{\%||\%}
+\alias{\%or\%}
 
-%\alias{`\%-~\%`}
-%\alias{`\%-\%`}
-%\alias{`\%!imp~\%`}
-%\alias{`\%!imp\%`}
+\alias{\%-~\%}
+\alias{\%-\%}
+\alias{\%!imp~\%}
+\alias{\%!imp\%}
 
-%\alias{`\%+~\%`}
-%\alias{`\%+\%`}
-%\alias{`\%sum~\%`}
-%\alias{`\%sum\%`}
+\alias{\%+~\%}
+\alias{\%+\%}
+\alias{\%sum~\%}
+\alias{\%sum\%}
 
-%\alias{`\%--~\%`}
-%\alias{`\%xor~\%`}
-%\alias{`\%--\%`}
-%\alias{`\%xor\%`}
+\alias{\%--~\%}
+\alias{\%xor~\%}
+\alias{\%--\%}
+\alias{\%xor\%}
 
 
 \title{Set and multiset operations}
 \description{Operations between \code{"hset"} objects.}
 \usage{
 intersection(hset1, ..., semantic = "refer")
-# hset1 \%&\%  hset2 # refer semantic, operator equivalent to \%&&\%  , \%and\%
-# hset1 \%&~\% hset2 # value semantic, operator equivalent to \%&&~\% , \%and~\%
+hset1 \%&\%  hset2 # refer semantic, operator equivalent to \%&&\%  , \%and\%
+hset1 \%&~\% hset2 # value semantic, operator equivalent to \%&&~\% , \%and~\%
 
 union(hset1, ..., semantic = "refer")
-# hset1 \%|\%  hset2 # refer semantic, operator equivalent to \%||\%  , \%or\%
-# hset1 \%|~\% hset2 # value semantic, operator equivalent to \%||~\% , \%or~\%
+hset1 \%|\%  hset2 # refer semantic, operator equivalent to \%||\%  , \%or\%
+hset1 \%|~\% hset2 # value semantic, operator equivalent to \%||~\% , \%or~\%
 
 difference(hset1, ..., semantic = "refer")
-# hset1 \%-\%  hset2 # refer semantic, operator equivalent to \%!imp\%
-# hset1 \%-~\% hset2 # value semantic, operator equivalent to \%!imp~\%
+hset1 \%-\%  hset2 # refer semantic, operator equivalent to \%!imp\%
+hset1 \%-~\% hset2 # value semantic, operator equivalent to \%!imp~\%
 
 symmdiff(hset1, ..., semantic = "refer")
-# hset1 \%--\%  hset2 # refer semantic, operator equivalent to \%xor\%
-# hset1 \%--~\% hset2 # value semantic, operator equivalent to \%xor~\%
+hset1 \%--\%  hset2 # refer semantic, operator equivalent to \%xor\%
+hset1 \%--~\% hset2 # value semantic, operator equivalent to \%xor~\%
 
 setsum(hset1, ..., semantic = "refer")
-# hset1 \%+\%  hset2 # refer semantic, operator equivalent to \%sum\%
-# hset1 \%+~\% hset2 # value semantic, operator equivalent to \%sum~\%
+hset1 \%+\%  hset2 # refer semantic, operator equivalent to \%sum\%
+hset1 \%+~\% hset2 # value semantic, operator equivalent to \%sum~\%
 }
 \arguments{
   \item{hset1}{first operand, which is an object of class \code{"hset"}.}
-  \item{...}{other operands, which are objects of class \code{"hset"}.}
+  \item{hset2}{second operand, which is an object of class \code{"hset"}, used with infix operators.}
+  \item{...}{other operands, which are all objects of class \code{"hset"}.}
   \item{semantic}{either \code{"refer"} or \code{"value"}.}
 }
 \details{
